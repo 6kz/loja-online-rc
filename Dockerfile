@@ -5,7 +5,7 @@ FROM python:3 AS base
 WORKDIR /usr/src/app
 
 # Copia tudo desta pasta para dentro da pasta WORKDIR dentro do Container
-COPY loja-online .
+COPY loja-online-rc/loja-online .
 COPY requirements.txt .
 
 # Corre o comando necessário para atualizar o pip
